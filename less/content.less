@@ -1,0 +1,80 @@
+/**
+ * Status on frontpage
+ */
+.pane-valhalla-blocks-party-constituency-status,
+.pane-valhalla-blocks-party-status {
+  font-size: 11px;
+}
+
+.column-label,
+.column-count {
+  width: 55px;
+  text-align: center;
+}
+
+/**
+ * Volunteer pollingstation page
+ */
+.volunteer-action {
+  .btn();
+  .btn-sm();
+  
+  &.edit{
+    .btn-default();
+    display: none;
+  }
+  
+  &.add{
+    .btn-success();
+  }
+  
+  &.remove{
+    .btn-danger();
+    display: none;
+  }
+}
+
+dd.assigned {
+  .edit,
+  .remove{
+    display: inline-block;
+  }
+  .add {
+    display: none;
+  }
+}
+
+dd {
+  .spinner-loading {
+    display: none;
+  }
+}
+
+dd.loading {
+  .spinner-loading {
+    display: inline-block;
+  }
+}
+
+.volunteer-item {
+  .well();
+  .btn-sm();
+}
+
+.party-volunteers {
+  .well();
+  .well-sm();
+}
+
+.page-actions{
+  .well();
+  .well-sm();
+  position: absolute;
+  right: 20px;
+  top: 0;
+  a {
+    font-size: 11px;
+  }
+}
+
+@media (min-width:992px){.modal-lg{width:900px}}
