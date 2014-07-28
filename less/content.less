@@ -18,16 +18,16 @@
 .volunteer-action {
   .btn();
   .btn-sm();
-  
+
   &.edit{
     .btn-default();
     display: none;
   }
-  
+
   &.add{
     .btn-success();
   }
-  
+
   &.remove{
     .btn-danger();
     display: none;
@@ -56,14 +56,12 @@ dd.loading {
   }
 }
 
-.volunteer-item {
-  .well();
-  .btn-sm();
-}
-
-.party-volunteers {
+p.volunteer {
   .well();
   .well-sm();
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 0px;
 }
 
 .page-actions{
@@ -75,6 +73,15 @@ dd.loading {
   a {
     font-size: 11px;
   }
+}
+
+.dataTables_wrapper input {
+  .form-control();
+}
+
+.paging_two_button a {
+  .btn();
+  .btn-default();
 }
 
 @media (min-width:992px){.modal-lg{width:900px}}

@@ -6557,90 +6557,88 @@ table .checkbox input[type="checkbox"] {
 /**
  * Party and election switcher in navbar
  */
-#valhalla-change-election-party-form {
+#valghalla-change-election-party-form {
   margin-top: 10px;
+  float: right;
 }
 @media (min-width: 768px) {
-  #valhalla-change-election-party-form .form-group {
+  #valghalla-change-election-party-form .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  #valhalla-change-election-party-form .form-control {
+  #valghalla-change-election-party-form .form-control {
     display: inline-block;
   }
-  #valhalla-change-election-party-form .radio,
-  #valhalla-change-election-party-form .checkbox {
+  #valghalla-change-election-party-form .radio,
+  #valghalla-change-election-party-form .checkbox {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
   }
-  #valhalla-change-election-party-form .radio input[type="radio"],
-  #valhalla-change-election-party-form .checkbox input[type="checkbox"] {
+  #valghalla-change-election-party-form .radio input[type="radio"],
+  #valghalla-change-election-party-form .checkbox input[type="checkbox"] {
     float: none;
     margin-left: 0;
   }
 }
-#valhalla-change-election-party-form input,
-#valhalla-change-election-party-form select,
-#valhalla-change-election-party-form button {
+#valghalla-change-election-party-form input,
+#valghalla-change-election-party-form select,
+#valghalla-change-election-party-form button {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
-select#valhalla-change-election-party-form input,
-select#valhalla-change-election-party-form select,
-select#valhalla-change-election-party-form button {
+select#valghalla-change-election-party-form input,
+select#valghalla-change-election-party-form select,
+select#valghalla-change-election-party-form button {
   height: 30px;
   line-height: 30px;
 }
-textarea#valhalla-change-election-party-form input,
-textarea#valhalla-change-election-party-form select,
-textarea#valhalla-change-election-party-form button {
+textarea#valghalla-change-election-party-form input,
+textarea#valghalla-change-election-party-form select,
+textarea#valghalla-change-election-party-form button {
   height: auto;
 }
-#valhalla-change-election-party-form button {
+#valghalla-change-election-party-form button {
   color: #ffffff;
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
-#valhalla-change-election-party-form button:hover,
-#valhalla-change-election-party-form button:focus,
-#valhalla-change-election-party-form button:active,
-#valhalla-change-election-party-form button.active,
-.open .dropdown-toggle#valhalla-change-election-party-form button {
+#valghalla-change-election-party-form button:hover,
+#valghalla-change-election-party-form button:focus,
+#valghalla-change-election-party-form button:active,
+#valghalla-change-election-party-form button.active,
+.open .dropdown-toggle#valghalla-change-election-party-form button {
   color: #ffffff;
   background-color: #47a447;
   border-color: #398439;
 }
-#valhalla-change-election-party-form button:active,
-#valhalla-change-election-party-form button.active,
-.open .dropdown-toggle#valhalla-change-election-party-form button {
+#valghalla-change-election-party-form button:active,
+#valghalla-change-election-party-form button.active,
+.open .dropdown-toggle#valghalla-change-election-party-form button {
   background-image: none;
 }
-#valhalla-change-election-party-form button.disabled,
-#valhalla-change-election-party-form button[disabled],
-fieldset[disabled] #valhalla-change-election-party-form button,
-#valhalla-change-election-party-form button.disabled:hover,
-#valhalla-change-election-party-form button[disabled]:hover,
-fieldset[disabled] #valhalla-change-election-party-form button:hover,
-#valhalla-change-election-party-form button.disabled:focus,
-#valhalla-change-election-party-form button[disabled]:focus,
-fieldset[disabled] #valhalla-change-election-party-form button:focus,
-#valhalla-change-election-party-form button.disabled:active,
-#valhalla-change-election-party-form button[disabled]:active,
-fieldset[disabled] #valhalla-change-election-party-form button:active,
-#valhalla-change-election-party-form button.disabled.active,
-#valhalla-change-election-party-form button[disabled].active,
-fieldset[disabled] #valhalla-change-election-party-form button.active {
+#valghalla-change-election-party-form button.disabled,
+#valghalla-change-election-party-form button[disabled],
+fieldset[disabled] #valghalla-change-election-party-form button,
+#valghalla-change-election-party-form button.disabled:hover,
+#valghalla-change-election-party-form button[disabled]:hover,
+fieldset[disabled] #valghalla-change-election-party-form button:hover,
+#valghalla-change-election-party-form button.disabled:focus,
+#valghalla-change-election-party-form button[disabled]:focus,
+fieldset[disabled] #valghalla-change-election-party-form button:focus,
+#valghalla-change-election-party-form button.disabled:active,
+#valghalla-change-election-party-form button[disabled]:active,
+fieldset[disabled] #valghalla-change-election-party-form button:active,
+#valghalla-change-election-party-form button.disabled.active,
+#valghalla-change-election-party-form button[disabled].active,
+fieldset[disabled] #valghalla-change-election-party-form button.active {
   background-color: #5cb85c;
   border-color: #4cae4c;
-}
-#block-valhalla-blocks-election-party-switcher {
-  float: right;
 }
 /**
  * Status on frontpage
@@ -6836,26 +6834,7 @@ dd .spinner-loading {
 dd.loading .spinner-loading {
   display: inline-block;
 }
-.volunteer-item {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
-.volunteer-item blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-.party-volunteers {
+p.volunteer {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -6867,8 +6846,11 @@ dd.loading .spinner-loading {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 9px;
   border-radius: 3px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 0px;
 }
-.party-volunteers blockquote {
+p.volunteer blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -6894,6 +6876,137 @@ dd.loading .spinner-loading {
 }
 .page-actions a {
   font-size: 11px;
+}
+.dataTables_wrapper input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.dataTables_wrapper input:-moz-placeholder {
+  color: #999999;
+}
+.dataTables_wrapper input::-moz-placeholder {
+  color: #999999;
+}
+.dataTables_wrapper input:-ms-input-placeholder {
+  color: #999999;
+}
+.dataTables_wrapper input::-webkit-input-placeholder {
+  color: #999999;
+}
+.dataTables_wrapper input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.dataTables_wrapper input[disabled],
+.dataTables_wrapper input[readonly],
+fieldset[disabled] .dataTables_wrapper input {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+textarea.dataTables_wrapper input {
+  height: auto;
+}
+.paging_two_button a {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.paging_two_button a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.paging_two_button a:hover,
+.paging_two_button a:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.paging_two_button a:active,
+.paging_two_button a.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.paging_two_button a.disabled,
+.paging_two_button a[disabled],
+fieldset[disabled] .paging_two_button a {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.paging_two_button a:hover,
+.paging_two_button a:focus,
+.paging_two_button a:active,
+.paging_two_button a.active,
+.open .dropdown-toggle.paging_two_button a {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+.paging_two_button a:active,
+.paging_two_button a.active,
+.open .dropdown-toggle.paging_two_button a {
+  background-image: none;
+}
+.paging_two_button a.disabled,
+.paging_two_button a[disabled],
+fieldset[disabled] .paging_two_button a,
+.paging_two_button a.disabled:hover,
+.paging_two_button a[disabled]:hover,
+fieldset[disabled] .paging_two_button a:hover,
+.paging_two_button a.disabled:focus,
+.paging_two_button a[disabled]:focus,
+fieldset[disabled] .paging_two_button a:focus,
+.paging_two_button a.disabled:active,
+.paging_two_button a[disabled]:active,
+fieldset[disabled] .paging_two_button a:active,
+.paging_two_button a.disabled.active,
+.paging_two_button a[disabled].active,
+fieldset[disabled] .paging_two_button a.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 @media (min-width: 992px) {
   .modal-lg {
