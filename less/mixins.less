@@ -1,0 +1,58 @@
+
+
+// Pretty Buttons
+// Borrrowed from : https://gist.github.com/claviska/6117193
+.pretty-buttons(@color, @background-from, @background-to) {
+
+  color: @color;
+  #gradient > .vertical(@background-from, @background-to, 0%, 100%);
+  border: none;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    #gradient > .vertical(@background-to, @background-from, 0%, 100%);
+    color: @color;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background-to;
+    }
+  }
+}
+a {
+  color: @text-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color:  @link-hover-color;
+  }
+}
+.white-and-round() {
+  background-color: #fff;
+  border-radius: 5px 5px;
+}
+
+.bottom-padding {
+  padding-bottom: @grid-gutter-width;
+}
+.extra-bottom-padding {
+  padding-bottom: @grid-gutter-width + 10px;
+}
+
+.square-round-thumbnail(@width) {
+  height: @width;
+  width: @width;
+  border-radius: @width / 2;
+  border: 3px solid @gray;
+}
+
+
