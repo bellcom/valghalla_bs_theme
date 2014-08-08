@@ -6,7 +6,7 @@
 @gray-darker:            lighten(#000, 13.5%); // #222
 @gray-dark:              #333;
 @gray:                   #ccc;
-@gray-light:             #dedede;
+@gray-light:             darken(#dedede, 40%);
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
 @brand-darkblue:        #005191; // 1
@@ -45,7 +45,7 @@
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          13px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
@@ -150,7 +150,7 @@
 @input-bg:                       #fff;
 @input-bg-disabled:              @gray-lighter;
 
-@input-color:                    @gray;
+@input-color:                    @gray-darker;
 @input-border:                   #ccc;
 @input-border-radius:            @border-radius-base;
 @input-border-focus:             #66afe9;
