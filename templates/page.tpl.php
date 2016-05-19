@@ -117,21 +117,32 @@
               <?php print $admin_valghalla; ?>
             </li>
           <?php endif; ?>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Valghalla Manual<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="first">
+                <a href="http://valghalla.dk/valghalla-manual" class="first leaf" target="_blank">Valghalla Manual</a>
+              </li>
+              <li>
+                <a href="http://valghalla.dk/sites/default/files/valhalla-vejledning-til-valgsekretren.pdf" class="leaf" target="_blank">
+                  Vejledning til valgsekretær</a>
+              </li>
+              <li class="last">
+                <a href="http://valghalla.dk/sites/default/files/kom-godt-i-gang-med-valhalla-partier.pdf" class="last collapsed" target="_blank">Kom godt i gang</a>
+              </li>
+</ul>
+          </li>
         </ul>
         <?php $block = module_invoke('valghalla', 'block_view', 'election_party_switcher'); ?>
         <?php print render($block['content']); ?>
 
-        <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
-        </nav>
+        <?php if (!empty($primary_nav) && user_is_logged_in()): ?>
+          <?php print render($primary_nav); ?>
+        <?php endif; ?>
+
+        <?php if (!empty($secondary_nav)): ?>
+          <?php print render($secondary_nav); ?>
+        <?php endif; ?>
       </div>
     <?php endif; ?>
   </div>
@@ -167,9 +178,6 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
